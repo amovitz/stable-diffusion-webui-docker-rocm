@@ -8,4 +8,5 @@ git init
 git remote add origin "$2"
 git fetch origin "$3" --depth=1
 git reset --hard "$3"
+git submodule update --init --recursive --depth=1
 rm -rf .git
